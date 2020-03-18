@@ -1,0 +1,876 @@
+@import "css-reset.css";
+
+body, html {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    color: #FBCB45;
+    font-size: 3em;
+    margin-bottom: 0.7em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    z-index: 1000;
+    padding-left: 3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: #A7A8A9;
+    -webkit-box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.social {
+    margin-right: 4em;
+}
+
+.social li {
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.social a {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+    font-size: 1em;
+}
+
+.social a:hover {
+    background-color: transparent;
+    color: #FBCB45;
+}
+
+nav a {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #A7A8A9;
+}
+
+.cover-photo {
+    background-image: url("../img/guitar.jpg");
+    height: 100%;
+    filter: brightness(35%) grayscale(100%);
+}
+
+.portfolio-background {
+    background-image: url("../img/coder.jpg");
+    
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixed {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#logo {
+    z-index: 2;
+    height: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4em;
+    margin:auto;
+}
+
+#main-texts {
+    z-index: 2;
+    position: absolute;
+    width: 75%;
+    left: 0;
+    right: 0;
+    top: 39em;
+    margin:auto;
+    color: white;
+    text-align: center;
+}
+
+#presentation {
+    width: 90%;
+    margin: auto;
+    line-height: 1.6em;
+}
+
+.footnote {
+    margin-top: 2em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.slash {
+    color: #FBCB45;
+    font-weight: bold;
+}
+
+#learn-more {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    color: white;
+    text-align: center;
+}
+
+#learn-more > * {
+    margin-bottom: 0.3em;
+}
+
+#learn-more img {
+    width: 4%;
+    margin-bottom: 1em;
+}
+
+.me {
+    margin-top: 5em;
+    width: 25%;
+    clip-path: circle(50% at 50% 50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.introduction {
+    width: 70%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    font-size: 0.94em;
+}
+
+.introduction > div {
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.introduction a {
+    color: #FBCB45;
+}
+
+.introduction a:hover {
+    color: #9E7D2C;
+}
+
+#internship {
+    color: #FBCB45;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    color: #FBCB45;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.header {
+    background-color: gray;
+}
+
+.web {
+    background-color: #345B6A;
+}
+
+.adobe {
+    background-color: #896F99;
+}
+
+.microsoft {
+    background-color: #5984B7;
+}
+
+.others {
+    background-color: #263B4E;
+}
+
+.flex-list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-list li {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    font-size: 0.90em;
+}
+
+table {
+    font-size: 0.9em;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 0.85em;
+}
+
+.valikko {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5em;
+}
+
+.valikko ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.valikko li {
+    margin-right: 1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+.portfolioSelector:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.laatikko {
+    padding: 1em;
+    margin-top: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.90em;
+}
+
+.webDesign-on {
+    background-color: rgba(52, 91, 106, 0.85);
+}
+
+.videos-on {
+    background-color: rgba(89, 132, 183, 0.85);
+}
+
+.layoutDesign-on {
+    background-color: rgba(137, 111, 153, 0.85);
+}
+
+.publications-on {
+    background-color: rgba(150, 111, 66, 0.85);
+}
+
+.photos-on {
+    background-color: rgba(38, 59, 78, 0.85);
+}
+
+.kuva {
+    width: 20%;
+    height: auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.kuva img {
+    width: 97%;
+    height: auto;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+.teksti {
+    width: 70%;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+.teksti div {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.teksti h3 {
+    margin-top: 0.5em;
+}
+
+.teksti a:hover {
+    color: #FBCB45;
+}
+
+.kuva img:hover {
+    filter: brightness(70%);
+}
+
+.main-text div {
+    line-height: 1.6em;
+}
+
+.order {
+    order: 2;
+}
+
+.image-first .kuva{
+    order: 1;
+}
+
+.image-second .kuva{
+    order: 3;
+}
+
+footer {
+    padding: 2em;
+    text-align: right;
+}
+
+footer div {
+    line-height: 1.6em;
+    font-size: 0.9em;
+}
+
+table p {
+    overflow-wrap: break-word;
+}
+
+.cv {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+.cv-header {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2.6em;
+    margin-bottom: 0;
+    color: #FBCB45;
+    text-align: left;
+}
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1em;
+}
+
+.bold2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+table td:first-child {
+    text-align: right;
+    padding-right: 2em;
+}
+
+table td:last-child {
+    width: 30em;
+}
+
+td {
+    padding-bottom: 0.3em;
+    line-height: 1.2em;
+}
+
+td p {
+    padding-bottom: 0.3em;
+}
+
+td p:last-child {
+    padding-bottom: 0;
+}
+
+.whitespace {
+     color: transparent;
+     cursor: default;
+}
+
+.button:hover {
+    background-color: #9E7D2C;
+    color: black;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #FBCB45;
+    color: black;
+}
+
+.main-text a {
+    color: #FBCB45;
+}
+
+.main-text a:hover {
+    color: #9E7D2C;
+}
+
+.articles div{
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+.articles a {
+    color: #FBCB45;
+}
+
+.articles a:hover {
+    color: #9E7D2C;
+}
+
+blockquote {
+    margin-bottom: 1em;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    padding-left: 4em;
+}
+
+.photography {
+    display: inline-block;
+}
+
+.black-sleep li {
+    width: 31%;
+    padding: 0;
+}
+
+.physicists li {
+    width: 22%;
+    padding: 0;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.current {
+    background-color: white;
+    color: #A7A8A9;
+}
+
+footer ul {
+    display: none;
+}
+
+#collapse-header {
+    display: none;
+}
+
+@media screen and (min-height: 1601px) {
+    #main-texts {
+        top: 60em;
+    }
+}
+
+@media screen and (max-height: 1600px) {
+    #main-texts {
+        top: 60em;
+    }
+}
+
+@media screen and (max-height: 1400px) {
+    #main-texts {
+        top: 50em;
+    }
+}
+
+@media screen and (max-height: 1200px) {
+    #main-texts {
+        top: 35em;
+    }
+}
+
+@media screen and (max-height: 960px) {
+    #main-texts {
+        top: 33em;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    #main-texts {
+        top: 30em;
+    }
+}
+
+@media screen and (max-height: 760px) {
+    #main-texts {
+        top: 28em;
+    }
+    
+    #main-texts h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-height: 690px) {
+    #main-texts {
+        top: 25em;
+    }
+}
+
+@media screen and (max-height: 645px) {
+    #main-texts {
+        width: 100%;
+        top: 24em;
+    }
+    
+    #presentation {
+        width: 90%;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-height: 595px) {
+    #main-texts {
+        top: 22.5em;
+    }
+}
+
+@media screen and (max-height: 595px) and (max-width: 1300px){
+    
+    #main-texts h1{
+        font-size: 1.7em;
+    }
+    
+    #presentation {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    #logo {
+       height:  45%;
+    }
+    #main-texts {
+        top: 20em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #main-texts {
+        width: 90%;
+    }
+}    
+
+@media screen and (max-width: 805px) {
+    #logo {
+        height: 35%;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #main-texts {
+        width: 90%;
+    }
+    #main-texts h1 {
+        font-size: 2em;
+        margin-bottom: 0.7em;
+    }
+    
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 760px) and (max-width: 805px) {
+    #main-texts {
+        top: 20em;
+    }
+}
+
+@media screen and (max-height: 560px) and (max-width: 800px){
+    #main-texts {
+        top: 18em;
+    }
+    
+    #main-texts h1{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-height: 595px) and (max-width: 675px){
+    #main-texts {
+        top: 18em;
+    }
+    
+    #main-texts h1{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .social {
+        display: none;
+    }
+    
+    #nav {
+        justify-content: center;
+    }
+    
+    nav {
+        padding-left: 0em;
+    }
+    
+    footer ul {
+        display: inline;
+    }
+    
+    footer li {
+        display: inline-block;
+        padding: 1em; 
+    }
+}    
+
+@media screen and (max-width: 600px) {
+    #presentation {
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+    
+    #person {
+        width: 50%;
+    }
+    
+    .introduction {
+        width: 90%;
+    }
+    
+    .valikko {
+        width: 90%
+    }
+    
+    .laatikko {
+        justify-content: center;
+        width: 89%;
+    }
+    
+    .kuva {
+        width: 95%;
+        height: 270px;
+    }
+    
+    .image-second .kuva{
+        order: 1;
+    }
+
+    .kuva img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .teksti {
+        width: 90%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .black-sleep li {
+        width: 45%;
+    }
+
+    .physicists li {
+        width: 45%;
+    }
+    
+    .cv {
+        width: 90%;
+    }
+
+    nav li {
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    #main-texts h1{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #nav {
+        justify-content: flex-start;
+    }
+    
+    #nav li {
+        display: block;
+        margin-left: 1em;
+    }
+    
+    #collapse-header {
+        display: block;
+    }
+    
+    #main-texts {
+        width: 90%;
+    }
+    
+    #main-texts h1 {
+        margin-bottom: 0.7em;
+    }
+    
+    #presentation {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #presentation {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-height: 560px) and (max-width: 330px) {
+    #main-texts {
+        top: 17em;
+    }
+    
+    #main-texts h1 {
+        font-size: 1.3em;
+    }
+}
+/*
+@media screen and (max-device-width: 380px) and (max-device-height: 720px) {
+    #main-texts {
+        top: 18em;
+        width: 90%;
+    }
+    
+    #main-texts h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.7em;
+    }
+    
+    #presentation {
+        font-size: 0.8em;
+    }    
+}
+
+@media screen and (max-device-width: 380px) and (max-device-height: 600px) {
+    #main-texts {
+        top: 16em;
+        width: 90%;
+    }
+    
+    #presentation {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-device-width: 780px) and (min-device-height: 1050px) {
+    #main-texts {
+        top: 28em;
+    }
+}
+
+@media screen and (max-device-width: 1050px) and (min-device-height: 1400px) {
+    #main-texts {
+        top: 50em;
+    }
+}
+
+@media screen and (max-device-width: 380px) and (min-device-height: 800px) {
+    #main-texts {
+        top: 22em;
+    }
+}
+
+@media screen and (max-device-width: 700px) and (max-device-height: 680px) {
+    #main-texts {
+        top: 20em;
+    }
+    
+    #presentation {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-device-width: 700px) and (max-device-height: 600px) {
+    #main-texts {
+        top: 17em;
+    }
+}
+
+@media screen and (max-device-width: 700px) and (max-device-height: 600px) {
+    #main-texts {
+        top: 17em;
+    }
+}
+*/
+/* POISTETTAVAT */
+
+.testi {
+    border: 1px solid red;
+}
