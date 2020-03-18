@@ -113,7 +113,7 @@ nav a:hover {
 }
 
 
-#logo {
+.logo {
     z-index: 2;
     height: 50%;
     display: block;
@@ -122,6 +122,10 @@ nav a:hover {
     right: 0;
     top: 4em;
     margin:auto;
+}
+
+#logo-mobile {
+    display: none;
 }
 
 #main-texts {
@@ -602,7 +606,7 @@ footer ul {
 }
 
 @media screen and (max-height: 570px) {
-    #logo {
+    .logo {
        height:  45%;
     }
     #main-texts {
@@ -617,7 +621,7 @@ footer ul {
 }    
 
 @media screen and (max-width: 805px) {
-    #logo {
+    .logo {
         height: 35%;
         display: block;
         position: absolute;
@@ -757,6 +761,14 @@ footer ul {
 
     .fixed {
         background-attachment: scroll;
+    }
+    
+    #logo-mobile {
+        display: inline;
+    }
+    
+    #logo-desktop {
+        display: none;
     }
     
 }
