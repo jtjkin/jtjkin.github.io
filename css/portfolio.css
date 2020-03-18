@@ -751,6 +751,14 @@ footer ul {
         padding-right: 0.2em;
     }
     
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .fixed {
+        background-attachment: scroll;
+    }
+    
 }
 
 @media screen and (max-width: 580px) {
