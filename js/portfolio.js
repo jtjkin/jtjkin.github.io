@@ -64,13 +64,9 @@ $(document).ready(function() {
     //https://stackoverflow.com/questions/31223341/detecting-scroll-direction
     window.onscroll = function(e) {
         if (this.oldScroll > this.scrollY === false) {
-            const timeoutUp = setTimeout(function () {
-                $("#nav").slideUp("fast");
-            }, 300);
+            $("#nav").slideUp("fast");
         } else {
-            const timeoutUp = setTimeout(function() {
                 $("#nav").slideDown("fast");
-            }, 300);
         }
         this.oldScroll = this.scrollY;
     };
