@@ -1,9 +1,5 @@
 $(document).ready(function() {
     
-    //TODO: implement headroom
-    //currently has compatability problems with other functions
-    //$("header").headroom();
-    
     //Sloganator
     const mainH1 = [
         `Weirdly-shaped swiss tool of the web development world`,
@@ -64,10 +60,33 @@ $(document).ready(function() {
        }
     }, 250);
     
+    //Hide nav when scrolling
+    //https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+    window.onscroll = function(e) {
+        if (this.oldScroll > this.scrollY === false) {
+            const timeoutUp = setTimeout(function () {
+                $("#nav").slideUp("fast");
+            }, 300);
+        } else {
+            const timeoutUp = setTimeout(function() {
+                $("#nav").slideDown("fast");
+            }, 300);
+        }
+        this.oldScroll = this.scrollY;
+    };
+    
     //nav toggler mobile
     $("#collapse-header").click(function() {
        $(".nav-collapse").slideToggle("600");
     });
+    
+    //hide menu when clicked
+    $(".nav-collapse").click(function () {
+        if(window.innerWidth < 390) {
+            $(".nav-collapse").slideUp("600");
+        }
+    });
+
     
     //cv selector -styles
     $(".change").click(function() {
