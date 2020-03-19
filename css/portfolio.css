@@ -26,7 +26,7 @@ nav {
     top: 0;
     width: 100%;
     color: white;
-    background-color: #A7A8A9;
+    background-color: #606060;
     -webkit-box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 13px 28px -3px rgba(0,0,0,0.75);
@@ -84,17 +84,17 @@ nav a {
 
 nav a:hover {
     background-color: white;
-    color: #A7A8A9;
+    color: #606060;
 }
 
 .cover-photo {
-    background-image: url("../img/guitar.jpg");
+    background-image: url("../img/coder.jpg");
     height: 100%;
     filter: brightness(35%) grayscale(100%);
 }
 
 .portfolio-background {
-    background-image: url("../img/coder.jpg");
+    background-image: url("../img/guitar.jpg");
     
 }
 
@@ -513,7 +513,7 @@ blockquote {
 
 .current {
     background-color: white;
-    color: #A7A8A9;
+    color: #606060;
 }
 
 footer ul {
@@ -522,6 +522,8 @@ footer ul {
 
 #collapse-header {
     display: none;
+    padding-top: 0.6em;
+    padding-bottom: 0.5em;
 }
 
 @media screen and (min-height: 1601px) {
@@ -803,6 +805,10 @@ footer ul {
     
     #presentation {
         font-size: 0.8em;
+    }
+    
+    .cover-photo {
+        height: 101vh;
     }
 }
 

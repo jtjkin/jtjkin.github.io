@@ -38,7 +38,7 @@ $(document).ready(function() {
      */ 
     
     const navHandler = setInterval(function () {
-       if ($("#logo").visible(true)) {
+       if ($("#logo-mobile").visible(true)) {
            $("#nav-home").addClass("current");
            $("#nav-person").removeClass("current");
            $("#nav-portfolio").removeClass("current");
@@ -532,6 +532,55 @@ $(document).ready(function() {
                     <tr>
                         <td></td>
                         <td>Saksa – A1</td>
+                    </tr>
+
+                    <tr>
+                        <td><h3 class="cv-header">Opintosuoritukset</h3></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Arvosana</td>
+                        <td class="bold">Kurssi</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ohjelmoinnin peruskurssi, Java</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ohjelmoinnin jatkokurssi, Java</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Pass</td>
+                        <td>R Course for Researchers</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>HTML & CSS</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Javascript</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>Bootstrap & jQuery</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>React</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>Web-palvelinohjelmointi, Java</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL</td>
                     </tr>`;
     
     const cvEng = `<tr>
