@@ -781,6 +781,12 @@ footer ul {
     }
 }
 
+@media screen and (max-width: 460px) {
+    #presentation {
+        font-size: 0.7em;
+    }
+}
+
 @media screen and (max-width: 390px) {
     #nav {
         justify-content: flex-start;
@@ -812,12 +818,6 @@ footer ul {
     }
 }
 
-@media screen and (max-width: 460px) {
-    #presentation {
-        font-size: 0.7em;
-    }
-}
-
 @media screen and (max-height: 560px) and (max-width: 330px) {
     #main-texts {
         top: 17em;
@@ -826,77 +826,4 @@ footer ul {
     #main-texts h1 {
         font-size: 1.3em;
     }
-}
-/*
-@media screen and (max-device-width: 380px) and (max-device-height: 720px) {
-    #main-texts {
-        top: 18em;
-        width: 90%;
-    }
-    
-    #main-texts h1 {
-        font-size: 1.5em;
-        margin-bottom: 0.7em;
-    }
-    
-    #presentation {
-        font-size: 0.8em;
-    }    
-}
-
-@media screen and (max-device-width: 380px) and (max-device-height: 600px) {
-    #main-texts {
-        top: 16em;
-        width: 90%;
-    }
-    
-    #presentation {
-        font-size: 0.7em;
-    }
-}
-
-@media screen and (max-device-width: 780px) and (min-device-height: 1050px) {
-    #main-texts {
-        top: 28em;
-    }
-}
-
-@media screen and (max-device-width: 1050px) and (min-device-height: 1400px) {
-    #main-texts {
-        top: 50em;
-    }
-}
-
-@media screen and (max-device-width: 380px) and (min-device-height: 800px) {
-    #main-texts {
-        top: 22em;
-    }
-}
-
-@media screen and (max-device-width: 700px) and (max-device-height: 680px) {
-    #main-texts {
-        top: 20em;
-    }
-    
-    #presentation {
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-device-width: 700px) and (max-device-height: 600px) {
-    #main-texts {
-        top: 17em;
-    }
-}
-
-@media screen and (max-device-width: 700px) and (max-device-height: 600px) {
-    #main-texts {
-        top: 17em;
-    }
-}
-*/
-/* POISTETTAVAT */
-
-.testi {
-    border: 1px solid red;
 }

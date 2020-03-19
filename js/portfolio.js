@@ -63,10 +63,12 @@ $(document).ready(function() {
     //Hide nav when scrolling
     //https://stackoverflow.com/questions/31223341/detecting-scroll-direction
     window.onscroll = function(e) {
-        if (this.oldScroll > this.scrollY === false) {
-            $("#nav").slideUp("fast");
-        } else {
+        if(window.innerWidth < 390) {
+            if (this.oldScroll > this.scrollY === false) {
+                $("#nav").slideUp("fast");
+            } else {
                 $("#nav").slideDown("fast");
+            }
         }
         this.oldScroll = this.scrollY;
     };
