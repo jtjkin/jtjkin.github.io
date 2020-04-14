@@ -588,7 +588,7 @@ $(document).ready(function() {
                         <td>Bootstrap & jQuery</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
+                        <td>5</td>
                         <td>React</td>
                     </tr>
                     <tr>
@@ -871,7 +871,7 @@ $(document).ready(function() {
                         <td>Bootstrap & jQuery</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
+                        <td>5</td>
                         <td>React</td>
                     </tr>
                     <tr>
