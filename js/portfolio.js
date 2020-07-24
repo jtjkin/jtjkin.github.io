@@ -46,7 +46,7 @@ $(document).ready(function() {
            $("#nav-portfolio").removeClass("current");
            $("#nav-cv").removeClass("current");
        }
-       if ($("#publications").visible(true)) {
+       if ($(".portfolio").visible(true)) {
            $("#nav-home").removeClass("current");
            $("#nav-person").removeClass("current");
            $("#nav-portfolio").addClass("current");
@@ -397,19 +397,6 @@ $(document).ready(function() {
                     </tr>
                     <tr>
                         <td>
-                            <p class="bold">Euran kunta</p>
-                            <p class="cursive">Harjoittelija</p>
-                            <p class="cursive">5/2020 – (osa-aikainen)</p>
-                        </td>
-                        <td>
-                            Euran kunta toteuttaa kesän aikana laajan websivujen päivityksen, jonka osana
-                            tulen keskittymään Euran esihistorian opastuskeskus Nauravan lohikäärmeen ja 
-                            Euran muinaisjäännösten osiin sivustolla. Hyödynnän tässä työssä sekä front-end -osaamistani
-                            sekä aikaisempaa kokemusta arkeologisesta kulttuuriperinnöstä ja museologiasta. 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
                             <p class="bold">Turun yliopisto</p>
                             <p class="cursive">Väitöskirjatutkija</p>
                             <p class="cursive">6/2015 –</p>
@@ -605,12 +592,12 @@ $(document).ready(function() {
                         <td>React</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
-                        <td>Web-palvelinohjelmointi, Java</td>
+                        <td>5</td>
+                        <td>Wordpress</td>
                     </tr>
                     <tr>
                         <td>TBA</td>
-                        <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL</td>
+                        <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
                     </tr>`;
     
     const cvEng = `<tr>
@@ -698,19 +685,6 @@ $(document).ready(function() {
                     <tr>
                         <td><h3 class="cv-header">Work experience</h3></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="bold">Municipality of Eura</p>
-                            <p class="cursive">Intern</p>
-                            <p class="cursive">5/2020 – (part-time)</p>
-                        </td>
-                        <td>
-                            The municipality of Eura is making a major update to their overall website layout.
-                            As a part of the update, I have been tasked to focus on subsite of the Prehistory 
-                            Information Center Laughing Dragon and overall presentation of prehistory of Eura area, combining
-                            both front-end development and my previous expertice on archaeology. 
-                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -901,12 +875,12 @@ $(document).ready(function() {
                         <td>React</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
-                        <td>Web-server programming, Java</td>
+                        <td>5</td>
+                        <td>Wordpress</td>
                     </tr>
                     <tr>
                         <td>TBA</td>
-                        <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL</td>
+                        <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
                     </tr>`;
 });
 
