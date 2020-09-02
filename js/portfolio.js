@@ -336,17 +336,17 @@ $(document).ready(function() {
                         </td>
                         <td>
                             <p>Ohjelmointi</p>
-                            <p>Täydennysopinnot, 28 op</p>
+                            <p>Täydennysopinnot, 34 op</p>
                         </td>
                     </tr>
                     <tr>
                         <td>2019 -</td>
-                        <td class="cursive">React, Redux, Node.js, MongoDB, GraphQL, 8 op 
+                        <td class="cursive">Full stack: React, Redux, Node.js, MongoDB, GraphQL, 9 op 
                             </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td class="cursive">Web-palvelinohjelmointi Java, 5 op</td>
+                        <td class="cursive">Full stack -projektikurssi, 10 op</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -627,17 +627,17 @@ $(document).ready(function() {
                         </td>
                         <td>
                             <p>Programming</p>
-                            <p>Additional education, 28 cr</p>
+                            <p>Additional education, 34 cr</p>
                         </td>
                     </tr>
                     <tr>
                         <td>2019 -</td>
-                        <td class="cursive">React, Redux, Node.js, MongoDB, GraphQL, 8 cr 
+                        <td class="cursive">Full stack: React, Redux, Node.js, MongoDB, GraphQL, 9 cr 
                             </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td class="cursive">Web-server programming Java, 5 cr</td>
+                        <td class="cursive">Full stack -project, 10 cr</td>
                     </tr>
                     <tr>
                         <td></td>
