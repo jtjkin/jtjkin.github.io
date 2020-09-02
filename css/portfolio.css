@@ -217,6 +217,10 @@ nav a:hover {
     font-weight: bold;
 }
 
+.highlight {
+    color: #FBCB45;
+}
+
 h2 {
     font-family: "Permanent Marker", cursive;
     color: #FBCB45;
