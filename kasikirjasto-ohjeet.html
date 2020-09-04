@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Portfolio | Joonas Kinnunen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Joonas Kinnunen, a front-end developer and an UI designer; a portfolio.">
+        <meta name="keywords" content="front-end,UI design,portfolio">
+        <link href="img/icons/icon.png" type="image/png" sizes="24x24" rel="icon"> 
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway&display=swap" rel="stylesheet"> 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <section>
+            <h2>Käsikirjasto-sovellus, käyttöohjeet</h2>
+            <h3>(Vaikkakin se on aika simppeli)</h3>
+            <h4>Käyttäjätunnukset</h4>
+            <p>Sovellukseen on kaksi käyttäjätunnusta:</p>
+            <ul>
+                <li>Sähköpostiosoite: demo@demo.demo</li>
+                <li>Salasana: demo</li>
+            </ul>
+            <ul>
+                <li>Sähköpostiosoite: testitestaaja@utu.fi</li>
+                <li>Salasana: Testisalasana</li>
+            </ul>
+            <p>Näistä ensimmäinen antaa mahdollisuuden tarkastella myös admin-toimintoja, mutta estää muokkaamasta tietokantaa.</p>
+            <p></p>
+            <p>Jälkimmäisellä ei ole admin-tunnuksia, mutta kirjojen lisääminen ja poistaminen ym. toimivat. Molemmista on estetty sähköpostien lähettäminen.</p>
+            <p>Tein näin, jotta botit ja trollit eivät valtaa sovellusta täysin (En tiedä onko huoli todellinen.) </p>
+            <p>Täydellistä toimivuutta voi testata lokaalisti kun tekee backille .env -tiedoston, jossa on seuraavat tiedot:</p>
+            <ul>
+                <li>PORT=3003</li>
+                <li>TOKEN_MASTER_PASSWORD=</li>
+                <li>MONGODB_URI=</li>
+                <li>EMAIL= (gmail. Huom. käytössä on nodemailer, joten gmailista täytyy sallia kolmannen osapuolen sovellukset)</li>
+                <li>EMAIL_PASSWORD= (gmail)</li>
+            </ul>
+
+            <h4>Login-sivu</h4>
+            <p>Kirjautuminen sähköpostiosoitteella ja salasanalla.</p>
+            <p>Salasana unohtunut? -linkki vie sivulle, josta back end generoi uuden koodin ja lähettää sen sähköpostiin.</p>
+            <p>Luo tili -sivulla pääsee lisäämään käyttäjiä. Sovellus on suljettu, eli ainoastaan liittymiskoodin tietämällä saa kirjauduttua.</p>
+            <h4>Etusivu</h4>
+            <p>Otsikkoa 'Arkeologian käsikirjasto' klikkaamalla pääsee tietoihin ja gdpr-asioihin.</p>
+            <p>Hakupalkin kautta pääsee etsimään kirjoja (Kannattaa kokeilla esim. sanaa archaeology). Haku ottaa huomioon sekä kirjan otsikon, että tekijän ja järjestää ne string-similarity -pluginin avulla. Ei ihan googlea vastaava, mutta kelpaa tähän hätään.</p>
+            <p>Sovellus listaa hyllyyn saapuneet varaukset, voimassaolevat varaukset ja palautuspyynnöt. Tiedot tulevat reduxista kirjautuneen käyttäjän tiedoista, joita päivitetään aina kun varataan, palautetaan, lainataan kirjoja.</p>
+            <p>Jokainen kirjatietue on linkki kirjan omalle sivulle (esittely alla).</p> 
+            <h4>Kirjatietue -sivu</h4>
+            <p>Kirjan laajemmat tiedot ja lainaajan tiedot. Kaikkien varausten määrä näkyy myös tällä sivulla. Jokainen laina, varaus ja palautus, joka koskettaa myös toista käyttäjää (esim. varattu kirja palautetaan), lähettää sähköpostin asianosaiselle.</p>
+            <p>Admin-paneelin kautta pääsee muokkaamaan kirjan tietoja (ei toimi demo-tunnuksilla).</p>
+            <h4>Tallenna uusi kirja -sivu</h4>
+            <p>Hae ISBN:llä -nappi hakee Library of Congressin avoimesta apista tietoja isbn:llä. Se oikeasti toimii, mutta suomalaisesta näkökulmasta siellä on todella vähän isbn:ä, joita löytyisi. ISBN:iä saattaa olla myös useampia, jolloin haku ei palauta mitään. Paras tapa kokeilla on hakea LOC:in kirjoja, joilla on ISBN ja syöttää tänne. Jos ISBN:llä löytyy tietoja, sovellus syöttää ne inputteihin, jolloin niitä voi vielä muokata.</p>
+            <h4>Haku -sivu</h4>
+            <p>Hakupalkin hakutulokset. Säilyttää haun tulokset kunnes tehdään uusi haku. Liikennevalot kertovat onko kirja vapaa, varattu, lainassa tai omassa lainassa.</p>
+            <h4>Omat tiedot -sivu</h4>
+            <p>Siinä missä etusivu listaa toimintaa vaativat ja tärkeä kirjatietueet, omat sivut listaa kaikki käyttäjän kirjoihin liittyvät tietueet sekä statistiikaa lainojen määrästä ja laina-ajasta yhteensä.</p>
+            <p>Päivitä omia tietoja -nappi vie sivulle, josta voi vaihtaa salasanan tai roolin (perustutkinto-opiskelija, post-doc, tohtorikoulutettava, henkilökuntaa jne.)</p>
+            <p>Admin-hallinta -nappi vie sivulle, jossa adminit pystyvät lisäämään ja poistamaan tiedotteita, muuttamaan liittymiskoodin ja antamaan uusia ja poistamaan admin-tunnuksia. Tietosuojasta on pidetty huolta ja sovellus ei koskaan palauta listaa kaikista käyttäjistä. Poikkeuksena admin-tunnukset omaavien henkilöiden lista.</p>
+            <p>Lisäksi sivulla on erinäistä tilastoa käyttäjistä ja kirjoista.</p>
+        </section>
+    </body>
+</html>
