@@ -115,6 +115,7 @@ $(document).ready(function() {
      * Portfolio style watcher. When selections are filtered,
      * applies background color & image first -layouts to every odd .laatikko-class
      * 
+     * //OMITTED: 7.9.2020
      */
     const interval = setInterval(function() {
         let visible = [];
