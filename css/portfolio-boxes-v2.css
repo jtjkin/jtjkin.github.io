@@ -47,16 +47,11 @@
     margin-right: 2em;
     margin-bottom: 5em;
     border-radius: 1em;
-    perspective: 1px;
-    backface-visibility: hidden;
-    filter: drop-shadow(5px 5px 10px #000000);
-}
-.onHover {
-    transform: translateZ(0) scale(1.025);
+
 }
 
-.box:hover { 
-    animation: boxHover 1s;
+.onHover {
+    transform: translateZ(0) scale(1.025);
 }
 
 .imageFilterOn {
@@ -100,6 +95,14 @@
     width: 40%;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .box {
+        perspective: 1px;
+        backface-visibility: hidden;
+        filter: drop-shadow(5px 5px 10px #000000);
+    }
 }
 
 @media screen and (min-width: 1557px) {
