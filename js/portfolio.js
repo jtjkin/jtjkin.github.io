@@ -597,7 +597,7 @@ $(document).ready(function() {
                         <td>Wordpress</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
+                        <td>5</td>
                         <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
                     </tr>`;
     
@@ -880,7 +880,7 @@ $(document).ready(function() {
                         <td>Wordpress</td>
                     </tr>
                     <tr>
-                        <td>TBA</td>
+                        <td>5</td>
                         <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
                     </tr>`;
 });
