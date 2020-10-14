@@ -573,7 +573,7 @@ $(document).ready(function() {
                         <td>SQL</td>
                     </tr>
                     <tr>
-                        <td>Pass</td>
+                        <td>Hyv.</td>
                         <td>R Course for Researchers</td>
                     </tr>
                     <tr>
@@ -599,6 +599,10 @@ $(document).ready(function() {
                     <tr>
                         <td>5</td>
                         <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
+                    </tr>
+                    <tr>
+                        <td>Hyv.</td>
+                        <td>Full Stack Open - Harjoitustyö (10 op)</td>
                     </tr>`;
     
     const cvEng = `<tr>
@@ -882,6 +886,10 @@ $(document).ready(function() {
                     <tr>
                         <td>5</td>
                         <td>Full Stack Open (React, Redux, Node.js, MongoDB, GraphQL, Typescript)</td>
+                    </tr>
+                    <tr>
+                        <td>Pass</td>
+                        <td>Full Stack Open - Practice work (10 cr)</td>
                     </tr>`;
 });
 
