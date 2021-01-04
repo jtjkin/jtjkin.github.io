@@ -719,7 +719,7 @@ $(document).ready(function() {
                             <p class="cursive">Layout designer</p>
                             <p class="cursive">2015 –</p>
                         </td>
-                        <td>I have been doing layout design, graphic design, phto- and cinematography
+                        <td>I have been doing layout design, graphic design, photo- and cinematography
                             work since year 2015 and as a sole proprietor since year 2018.
                             My clients have been, for example, Aboa Vetus & Ars
                             Nova -museum, National Archives of Finland, and departments
